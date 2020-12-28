@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style> .bgcolor { background-color: yellow } </style>
+
+<script>
+$(document).ready( function() {
+	$("p").click( function() {
+		$(this).removeAttr("class style");
+	});
+});
+</script>
+
+</script>
+</head>
+<body>
+	<p class="bgcolor"
+		style="color:red; font-weight:bold">
+		텍스트를 클릭하면 스타일이 삭제됩니다.</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="object.js"></script>
+<script>
+// 객체 정의
+	s1 = new Student("홍길동","컴퓨터과학", 3); // 객체 생성
+	s1.print();
+	s1.region="서울";
+	s1.subject = function () {
+		document.write("학생이름: "+this.name+"<br/>");
+		document.write("소속지역대학: "+this.region+"<br/>");
+		document.write("수강과목: 컴퓨터과학개론, 알고리즘, HTML5<br/>");
+		}
+	s1.subject();
+</script>
+</head>
+<body>
+
+
+
+</body>
+</html>

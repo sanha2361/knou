@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready( function () {
+		$("#text").click( function () {
+			alert( $("#mydiv").text() );});
+		$("#html").click( function () {
+			alert( $("#mydiv").html() );});
+	});
+</script>
+
+</head>
+<body>
+	<div id="mydiv"><b>요소의 텍스트 콘텐츠 가져오기</b></div><br/>
+	<button id="text">text() 가져오기</button>
+	<button id="html">html() 가져오기</button>
+</body>
+</html>

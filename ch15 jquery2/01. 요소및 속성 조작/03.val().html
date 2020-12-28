@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready( function () {
+	$("#check").click( function () {
+	$("#value").text($("#grade").val()+"학년 "+
+	$("#name").val()+"입니다.");
+	});
+});
+</script>
+</head>
+<body>
+	학년: <input type="text" id="grade"><br/>
+	이름: <input type="text" id="name"><br/><br/>
+	<button id="check">입력값 확인</button>
+	<hr/><div id="value"></div>
+</body>
+</html>

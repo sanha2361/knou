@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function addElement() {
+	var newImg = document.createElement("img");
+	var srcNode = document.createAttribute("src");
+	srcNode.value = "knou.png";
+	var heightNode = document.createAttribute("height");
+	heightNode.value = "100";
+	newImg.setAttributeNode(srcNode);
+	newImg.setAttributeNode(heightNode);
+	document.getElementById("main").appendChild(newImg);
+}
+</script>
+</head>
+<body>
+	<input type="button" value="요소 추가" onClick="addElement()"><br/>
+	<div id="main"></div>
+
+</body>
+</html>

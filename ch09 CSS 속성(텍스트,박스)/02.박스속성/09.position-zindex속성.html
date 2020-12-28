@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div { width: 120px; height: 120px; }
+		.pos1 { position: static; top: 120px; left: 120px;
+		background-color: gray; }
+		.pos2 { position: relative; z-index: 3;
+		top: 30px; left: 60px;
+		background-color: orange; }
+		.pos3 { position: absolute; z-index: 2;
+		top: 120px; right: 150px;
+		background-color: lightblue; }
+		.pos4 { position: absolute;
+		top: 90px; left: 90px;
+		background-color: aqua; }
+		.pos5 { position: fixed; top: 30px; right: 10px;
+		background-color: olive; }
+
+</style>
+</head>
+<body>
+	<div class="pos1">위치 지정 1</div>
+	<div class="pos2">위치 지정 2</div>
+	<div class="pos3">위치 지정 3</div>
+	<div class="pos4">위치 지정 4</div>
+	<div class="pos5">위치 지정 5</div>
+
+</body>
+</html>

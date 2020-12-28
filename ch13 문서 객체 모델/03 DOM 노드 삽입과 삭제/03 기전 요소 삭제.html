@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function removeNode() {
+	var parent = document.getElementById("list");
+	var child = document.getElementById("i2");
+	parent.removeChild(child);
+}
+</script>
+</head>
+<body>
+	<input type="button" value="요소 삭제" onClick="removeNode()"><br/>
+	<ul id="list">
+		<li id="i1">항목1</li>
+		<li id="i2">항목2</li> <!-- 삭제할 요소 -->
+		<li id="i3">항목3</li>
+	</ul>
+
+</body>
+</html>

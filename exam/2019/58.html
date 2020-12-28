@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.table1 { width: 300px;
+	table-layout: fixed;
+	border-collapse: separate;
+	caption-side: bottom;
+	border-spacing: 20px 20px;
+	}
+.table2 { width: 300px;
+	table-layout: auto;
+	border-collapse: collapse;
+	caption-side: bottom }
+</style>
+</head>
+<body>
+<table border="1">
+	<caption> 기본 테이블</caption>
+	<tr> <td>HTML 웹프로그래밍</td><td>CSS</td> </tr>
+	<tr> <td>Javascript</td><td></td> </tr>
+</table> <br/>
+<table class="table1" border="1">
+	<caption>exam 58 캡션: auto separate top 10px 10px hide</caption>
+	<tr> <td>HTML 웹프로그래밍</td><td>CSS</td> </tr>
+	<tr> <td>Javascript</td><td></td> </tr>
+</table> <br/>
+<table class="table2" border="1">
+	<caption>캡션: fixed collapse bottom</caption>
+	<tr> <td>HTML 웹프로그래밍</td><td>CSS</td> </tr>
+	<tr> <td>Javascript</td><td></td> </tr>
+</table>
+</body>
+</html>

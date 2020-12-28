@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function getMsg() {
+	var msg1 = document.getElementById("myList").innerHTML;
+	alert(msg1);
+	var msg2 = document.getElementById("myList").textContent;
+	alert(msg2);
+}
+</script>
+</head>
+<body>
+	<ul id="myList">
+		<li id="item1">HTML5+CSS3</li>
+		<li id="item2">JavaScript+jQuery</li>
+	</ul>
+	<button onClick="getMsg()">내용 가져오기</button>
+
+</body>
+</html>

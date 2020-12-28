@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function addElement() {
+	var newP = document.createElement("p");
+	var txtNode = document.createTextNode("새로운 p 요소가 추가되었습니다.");
+	newP.appendChild(txtNode);
+	document.getElementById("main").appendChild(newP);
+}
+</script>
+</head>
+<body>
+	<input type="button" value="요소 추가" onClick="addElement()"><br/>
+	<div id="main"></div>
+
+</body>
+</html>

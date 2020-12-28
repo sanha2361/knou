@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	p { font-size: 14pt; line-height: 200%; }
+	p.line::first-line { color: blue; font-weight: bold; font-style: italic }
+	p.line::first-letter { color: red; font-size: 200% }
+	p.note::before { content: "NOTE: "; border: solid green }
+	p.note::after { content: " - Remember this";background-color: yellow; color: red }
+
+</style>
+</head>
+<body>
+	<p class="line">Love is patient, love is kind. It does not envy, it does
+	not boast, it is not proud. It is not rude, it is not self-seeking, it is not
+	easily angered, it keeps no record of wrong.</p>
+	<p class="note">의사 요소 ::before는 내용의 앞(before), ::after는 내용
+	의 뒤(after)에 생성된 내용을 삽입한다.</p>
+
+</body>
+</html>
+
+
+

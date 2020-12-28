@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready( function () {
+	$("#text").click( function () {
+		$("#mydiv").text("<b><i>text() 메서드</i>를 통한 텍스트 콘텐츠 수정</b>");});
+	$("#html").click( function () {
+		$("#mydiv").html("<b><i>html() 메서드</i>를 통한 텍스트 콘텐츠 수정</b>");
+	});
+});
+</script>
+
+</head>
+<body>
+	<button id="text">text() 수정하기</button>
+	<button id="html">html() 수정하기</button><br/><br/>
+	<div id="mydiv"></div>
+
+</body>
+</html>

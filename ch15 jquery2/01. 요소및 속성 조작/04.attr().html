@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready( function () {
+	$("img").click( function () {
+		var imgURL = $(this).attr("src");
+		var imgHeight = $(this).attr("height");
+		var imgWidth = $(this).attr("width");
+		$("#myDiv").html("파일명: "+imgURL+
+		"<br/>이미지 높이: "+imgHeight+
+		"<br/>이미지 폭: "+imgWidth);
+		});
+});
+</script>
+</head>
+<body>
+	<p>이미지를 클릭해보세요!!</p>
+	<img src="knou.png" height="100" width="150">
+	<hr/><div id="myDiv"></div>
+</body>
+</html>

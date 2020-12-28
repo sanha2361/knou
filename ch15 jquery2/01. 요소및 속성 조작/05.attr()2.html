@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready( function () {
+	$("p").click( function () {
+	$("img#flower").attr( {
+	src: "knou.png",
+	width: function (index) {return (index+1)*75 },height: 75 } );
+ });
+});
+
+</script>
+</head>
+<body>
+	<p>3개의 이미지를 표시하려면 텍스트를 클릭하세요!!</p>
+	<img id="flower"> <img id="flower"> <img id="flower">
+</body>
+</html>
